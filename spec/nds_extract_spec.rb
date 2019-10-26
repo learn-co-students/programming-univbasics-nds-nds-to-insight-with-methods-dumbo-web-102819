@@ -7,7 +7,6 @@ describe 'gross_for_director method' do
     first_director_hash = directors_database.find{ |x| x[:name] == first_director_name }
 
     expect(gross_for_director(first_director_hash)).to eq(1357566430)
-  end
 end
 
 describe 'The directors_database method can be processed by the directors_totals method' do
